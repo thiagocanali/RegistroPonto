@@ -1,0 +1,25 @@
+<div>
+    <h2>Registro de Ponto</h2>
+    <form (ngSubmit)="onGravar()">
+      <label>Funcionário:</label>
+      <input [(ngModel)]="funcionario" name="funcionario" />
+  
+      <label>Data:</label>
+      <input [(ngModel)]="data" name="data" type="date" />
+  
+      <label>Horas:</label>
+      <input [(ngModel)]="horas" name="horas" type="time" />
+  
+      <label>Tipo:</label>
+      <select [(ngModel)]="tipo" name="tipo">
+        <option>Entrada</option>
+        <option>Saída</option>
+      </select>
+  
+      <label>Anotação:</label>
+      <input [(ngModel)]="anotacao" name="anotacao" />
+  
+      <button type="submit">Gravar</button>
+    </form>
+  </div>
+  

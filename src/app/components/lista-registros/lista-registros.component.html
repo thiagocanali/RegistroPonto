@@ -1,0 +1,9 @@
+<div>
+    <h2>Lista de Registros</h2>
+    <ul>
+      <li *ngFor="let registro of registros">
+        {{ registro.funcionario }} - {{ registro.data }} - {{ registro.horas }} - {{ registro.tipo }} - {{ registro.anotacao }}
+      </li>
+    </ul>
+  </div>
+  
